@@ -1,0 +1,6 @@
+C:\Users\zenga\source\repos\Primr\Primr\bin\Primr.dll.config
+C:\Users\zenga\source\repos\Primr\Primr\bin\Primr.dll
+C:\Users\zenga\source\repos\Primr\Primr\bin\Primr.pdb
+C:\Users\zenga\source\repos\Primr\Primr\obj\Debug\Primr.csprojResolveAssemblyReference.cache
+C:\Users\zenga\source\repos\Primr\Primr\obj\Debug\Primr.dll
+C:\Users\zenga\source\repos\Primr\Primr\obj\Debug\Primr.pdb

@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My Portfolio</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        .container {
+            width: 100%;
+        }
+        .body-content{
+            margin: 27em;
+            margin-top: 2.5em;
+            width: 55%;
+            background-color: yellow;
+        }      
+        header{
+            padding: 0.7em;
+            background-color: gray;
+            color: white;
+            font-size: large;
+        }       
+        header a{
+            background-color: gray;
+            color: white;
+            text-decoration:none;
+        }     
+        header a:hover{
+            text-decoration: none;
+        }
+        .pdsa-sn-wrapper{
+            position: absolute;
+            top: 3.2em;
+            width: 13em;
+            height: 100%;
+            background-color: black;
+        }
+        .pdsa-sn-wrapper ul{
+            width: 11em;
+            list-style: none;
+            margin-top: 2em;
+            margin-left: 1em;
+            padding: 0em;
+        }
+
+        .pdsa-sn-wrapper ul li {
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+
+        .pdsa-sn-wrapper ul li a {
+            color: #999999;
+            text-decoration: none;
+            padding: 0.5em;
+        }
+
+        .pdsa-sn-wrapper ul li a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .pdsa-sn-wrapper ul li a:active,
+        .pdsa-sn-wrapper ul li a:focus {
+            text-decoration: none;
+            outline: none;
+            color:red;
+        }
+        .pdsa-sn-wrapper .pdsa-sn-brand{
+            margin-left: -0.5em;
+            font-size: large;
+            color: white;
+        }
+        .pdsa-sn-wrapper .pdsa-sn-brand a {
+            color: white;
+        }
+        .pdsa-sn-wrapper .pdsa-sn-brand a:hover {
+            color:lightblue;
+            background: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="MyPortfolio.html">Welcome to my personal website</a>
+        </header>
+        <nav class="pdsa-sn-wrapper">
+            <ul>
+                <li class="pdsa-sn-brand">
+                    <a href="MyPortfolio.html">Projects</a>
+                </li><li class="pdsa-sn-brand">
+                    <a href="#">Railerve App</a>
+                </li><li class="pdsa-sn-brand">
+                    <a href="#">Concert Manager</a>
+                </li><li class="pdsa-sn-brand">
+                    <a href="#">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container body-content">
+        <div class="row">
+            <div class="col-xs-10 col-lg-12">
+                <h1>Zenga Siwingwa</h1>
+                <h3>C# .NET Developer</h3>
+                <p>I spend a lot of time creating web and mobile applications</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
