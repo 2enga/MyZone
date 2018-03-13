@@ -5,35 +5,46 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <style>
-        .container {
+        .container header{
             width: 100%;
         }
         .body-content{
-            margin: 27em;
-            margin-top: 2.5em;
+            margin: 14em;
+            margin-top: 4.9em;
             width: 55%;
-            background-color: yellow;
-        }      
-        header{
-            padding: 0.7em;
+            transition: margin-left 0.3s linear;
+            -moz-transition: margin-left 0.3s linear;
+            -webkit-transition: margin-left 0.3s linear;
+
+        }     
+        .row{
+            position:absolute;
+            top:0em;
+            padding: 1.3em;
             background-color: gray;
             color: white;
             font-size: large;
+            width: 100%;  
+            left: 0em;
         }       
-        header a{
+        .row a{
             background-color: gray;
             color: white;
             text-decoration:none;
         }     
-        header a:hover{
+        .row a:hover{
             text-decoration: none;
         }
         .pdsa-sn-wrapper{
             position: absolute;
-            top: 3.2em;
+            top: 4.6em;
             width: 13em;
             height: 100%;
+            left: 0em;
             background-color: black;
+            transition: margin-left 0.3s linear;
+            -moz-transition: margin-left 0.3s linear;
+            -webkit-transition: margin-left 0.3s linear;
         }
         .pdsa-sn-wrapper ul{
             width: 11em;
@@ -77,35 +88,82 @@
             color:lightblue;
             background: none;
         }
+        .pdsa-sn-wrapper ul li a span{
+            margin-top: -1em;
+            margin-bottom: -1em;
+            margin-left:1em;
+            margin-right: -1em;
+            padding-top: -1em;
+            padding-bottom: -1em;   
+         }
+        .pdsa-sn-wrapper ul li a i{
+            padding-left: 10em;
+            margin-top: -1em;
+            margin-bottom: -1em; 
+        }
 
+        @media only screen and (max-width: 768px) { 
+            .pdsa-sn-wrapper{
+                left: -10em;
+            }
+
+            .body-content {
+                margin-left: 5em;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <a href="MyPortfolio.html">Welcome to my personal website</a>
-        </header>
+        <div class="row">
+            <header>
+                <a href="MyPortfolio.html">Welcome to my personal website</a>
+            </header>
+        </div>
+
         <nav class="pdsa-sn-wrapper">
             <ul>
                 <li class="pdsa-sn-brand">
-                    <a href="MyPortfolio.html">Projects</a>
-                </li><li class="pdsa-sn-brand">
-                    <a href="#">Railerve App</a>
-                </li><li class="pdsa-sn-brand">
-                    <a href="#">Concert Manager</a>
-                </li><li class="pdsa-sn-brand">
-                    <a href="#">Resume</a>
+                    <a href="MyPortfolio.html" class="visible-sm visible-md visible-lg">Projects</a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="visible-sm visible-md visible-lg">Railerve App</span>
+                    </a>
+                <i class="glyphicon glyphicon-home visible-xs"></i>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="visible-sm visible-md visible-lg">Concert Manager</span></a>
+                    <i class="glyphicon glyphicon-globe visible-xs"></i>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="visible-sm visible-md visible-lg">Resume</span>
+                    </a>
+                    <i class="glyphicon glyphicon-list-alt visible-xs"></i>
                 </li>
             </ul>
         </nav>
     </div>
 
     <div class="container body-content">
-        <div class="row">
+        <div class="row2">
             <div class="col-xs-10 col-lg-12">
                 <h1>Zenga Siwingwa</h1>
                 <h3>C# .NET Developer</h3>
                 <p>I spend a lot of time creating web and mobile applications</p>
+                <div>
+                    Elon Musk is the co-founder, CEO and Product Architect at Tesla, overseeing all product development, engineering, and design of the company's electric vehicles, battery products, and solar roofs.
+
+                    Since the company’s inception in 2003, Tesla’s mission has been to accelerate the transition to a sustainable energy future. The first Tesla product, the Roadster sports car, debuted in 2008, followed by the Model S sedan, which was introduced in 2012, and the Model X SUV, which launched in 2015. Model S was named Motor Trend 2013 Car of the Year, received Consumer Reports’ Best Overall Car and earned the highest-ever safety rating awarded by the National Highway Traffic Safety Administration. In 2017, Tesla began deliveries of Model 3, a $35,000 mass-market electric car with over 215 miles of range, and unveiled Tesla Semi, which is designed to save owners at least $200,000 over a million miles based on fuel costs alone.
+
+                    In 2015, Tesla introduced two energy storage products, the Powerwall home battery and the Powerpack industrial-scale battery. In 2016, Tesla acquired SolarCity, the leading provider of solar power systems in the United States, and in 2017 released Solar Roof, a beautiful and affordable energy generation product.
+
+                    Elon is also the co-founder, CEO and lead designer of Space Exploration Technologies (SpaceX), where he oversees the development and manufacturing of advanced rockets and spacecraft for missions to and beyond Earth orbit, with the goal of creating a self-sustaining city on Mars. He is also CEO of Neuralink, which is developing ultra-high bandwidth brain-machine interfaces to connect humans and computers, and co-founder and chairman of OpenAI, a non-profit research company working to build safe artificial intelligence and ensure that AI's benefits are as widely and evenly distributed as possible. Elon also founded and serves as CEO of The Boring Company, which aims to increase tunneling speed and drop costs in order to build a large network of tunnels, solving the problem of soul-destroying traffic.
+
+                    Previously, Elon co-founded and sold PayPal, the world's leading Internet payment system, and Zip2, one of the first internet maps and directions services, which helped bring major publishers like the New York Times and Hearst online.
+                </div>
             </div>
         </div>
     </div>
